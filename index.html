@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Phone hunter</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  </head>
+  <body>
+    <h1 class="text-center text-success bold" >Welocme to phone hunter</h1>
+
+    <section class="text-center">
+      <div class="mb-3">
+        <input id="input-name" class="w-50" type="text" placeholder="search your phone brand name">
+        <button id="btn-search" class="btn btn-primary">search</button>
+      </div>
+    </section>
+    <section>
+      <div id="card-container" class="row row-cols-1 row-cols-md-3 g-4">
+      </div>
+      <div id="hiden-note" class="mt-5 text-center text-danger d-none">
+        <h1>No phone found. please try again or try correct spelling</h1>
+      </div>
+    </section>
+    <section>
+      <div id="Show-all" class="text-center mt-5 d-none">
+        <div id="btn-show-all"class="btn btn-primary">
+          Show All
+        </div>
+      </div>
+    </section>
+    <section id="loader" class="d-none">
+      <div class="d-flex justify-content-center align-items-center">
+        <div class="spinner-border text-success" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+      </div>
+    </section>
+    <!-- this is start of modal -->
+    <section>
+<!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="phoneDeatles" tabindex="-1" aria-labelledby="phoneDeatlesLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="phoneDeatlesLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div id="phone-details" class="modal-body">
+        ...
+      </div>
+      
+    </div>
+  </div>
+</div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="js/phone.js"></script>
+  </body>
+</html>
